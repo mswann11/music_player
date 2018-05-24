@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+    <dimen name="top_margin">8dp</dimen>
+    <dimen name="app_name_textSize">32sp</dimen>
+    <dimen name="play_top_margin">16dp</dimen>
+    <dimen name="play_bottom_margin">24dp</dimen>
+    <dimen name="button_top_margin">48dp</dimen>
+    <dimen name="icon_size">65dp</dimen>
+</resources>

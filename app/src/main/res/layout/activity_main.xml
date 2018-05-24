@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        app:popupTheme="@style/AppTheme"
+        style="@style/Toolbar" />
+
+    <!--Image Credit: https://pixabay.com/en/music-note-music-note-musical-notes-1967480/ -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/music_note_trans_small_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppName"
+                android:layout_gravity="center" />
+
+            <RelativeLayout
+                android:id="@+id/genres"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/genreColor">
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/genres" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/arrows" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/artists"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/artistColor">
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/artist" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/arrows" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/songs"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/songColor">
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/all_songs" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/arrows" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shuffle"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/shuffleColor">
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/shuffle" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/arrows" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

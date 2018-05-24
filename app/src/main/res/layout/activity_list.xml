@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        app:popupTheme="@style/AppTheme"
+        style="@style/Toolbar" />
+
+    <!--Image Credit: https://pixabay.com/en/music-note-music-note-musical-notes-1967480/ -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/music_note_trans_small_dark" />
+
+    <TextView
+        android:id="@+id/app_name"
+        style="@style/AppName"
+        android:layout_below="@id/my_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_name"
+        android:divider="@android:color/black"
+        android:orientation="vertical" />
+</RelativeLayout>

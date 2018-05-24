@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_artists"
+        android:title="@string/artist"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_genres"
+        android:title="@string/genres"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_songs"
+        android:title="@string/all_songs"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_shuffle"
+        android:title="@string/shuffle"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#7C4DFF</color>
+    <color name="genreColor">#85512da8</color>
+    <color name="artistColor">#850097a7</color>
+    <color name="songColor">#85ec407a</color>
+    <color name="textColor">#fafafa</color>
+    <color name="shuffleColor">#85ffd54f</color>
+</resources>
