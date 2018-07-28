@@ -9,9 +9,9 @@
     tools:context=".MainActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        app:popupTheme="@style/AppTheme"
-        style="@style/Toolbar" />
+    android:id="@+id/my_toolbar"
+    app:popupTheme="@style/AppTheme"
+    style="@style/Toolbar" />
 
     <!--Image Credit: https://pixabay.com/en/music-note-music-note-musical-notes-1967480/ -->
     <ImageView
